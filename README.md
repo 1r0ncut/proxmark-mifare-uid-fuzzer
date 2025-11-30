@@ -55,7 +55,7 @@ to emulate a MIFARE Classic 4K card with the chosen UID.
 
 ---
 
-## Quick start / Getting started
+## Getting started
 
 ### 1. Requirements
 

@@ -10,18 +10,18 @@ Lua script for the Proxmark3 client that **fuzzes MIFARE Classic UIDs** in order
 ## Overview
 
 Many access control systems still rely only on the **UID (card serial number)** of MIFARE Classic badges to grant or deny access.  
-This repository contains a Proxmark3 Lua script that:
+This repository contains a Lua script that automates Proxmark3 commands to:
 
 - emulates a MIFARE Classic 4K card,
-- varies the UID according to different strategies,
+- vary the UID according to different strategies,
 - and sends a sequence of candidate UIDs to a reader in order to verify whether **other UIDs can be found that unlock the system**.
 
-During the original engagement, the goal was **not** to break into a system, but to verify that:
+During the original engagement, the goal was to verify that:
 
 - even with high-speed UID fuzzing,
 - and with different search strategies around a known valid UID,
 
-no alternative valid UID could be discovered on the tested readers.
+no alternative valid UID could be discovered on the tested readers, and to observe what alarms, if any, were triggered by this unusual behavior.
 
 ---
 
